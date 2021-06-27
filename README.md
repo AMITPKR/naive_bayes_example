@@ -20,7 +20,7 @@ str(data)
  
 xtabs(~admit+rank,data)
 
->     rank
+     rank
 admit  1  2  3  4
     0 28 97 93 55
     1 33 54 28 12
