@@ -11,9 +11,9 @@ Naive Bayes Machine Learning Model
 > 
 > library(psych)
 
-> data<-read.csv("binary.csv",header=T)
-> 
-> str(data)
+ data<-read.csv("binary.csv",header=T)
+ 
+ str(data)
 
 'data.frame':	400 obs. of  4 variables:
  $ admit: int  0 1 1 1 0 1 1 0 1 0 ...
@@ -21,15 +21,16 @@ Naive Bayes Machine Learning Model
  $ gpa  : num  3.61 3.67 4 3.19 2.93 3 2.98 3.08 3.39 3.92 ...
  $ rank : int  3 3 1 4 4 2 1 2 3 2 ...
  
-> xtabs(~admit+rank,data)
+xtabs(~admit+rank,data)
      rank
 admit  1  2  3  4
     0 28 97 93 55
     1 33 54 28 12
     
-> data$rank<-as.factor(data$rank)
-> data$admit<-as.factor(data$admit)
+ data$rank<-as.factor(data$rank)
+ data$admit<-as.factor(data$admit)
 ## visualisation
-> pairs.panels(data[-1])
+pairs.panels(data[-1])
+
 ![image](https://user-images.githubusercontent.com/70443251/123532915-132bbb80-d72f-11eb-8fc5-076cd0668b7b.png)
 
