@@ -4,11 +4,15 @@ Naive Bayes Machine Learning Model
 ## Naive Byes Classification with R
 ## Libraries
 > library(naivebayes)
+> 
 > library(dplyr)
+> 
 > library(ggplot2)
+> 
 > library(psych)
 
 > data<-read.csv("binary.csv",header=T)
+> 
 > str(data)
 
 'data.frame':	400 obs. of  4 variables:
