@@ -80,6 +80,7 @@ tab1<-table(predicted=p1,actual=train$admit)
 tab1
 
 1-sum(diag(tab1))/sum(tab1) # % of misclassification of training data
+>[1] 0.3133333
 
 ## confusion matrix for test data
 model1<-naive_bayes(admit~.,test)
@@ -91,5 +92,5 @@ tab2<-table(predicted=p2,actual=test$admit)
 tab2
 
 1-sum(diag(tab2))/sum(tab2)
-
+>[1] 0.24
 
