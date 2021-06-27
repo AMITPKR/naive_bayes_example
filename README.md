@@ -1,8 +1,8 @@
 # naive_bayes_example
 Naive Bayes Machine Learning Model
 
-> ## Naive Byes Classification with R
-> ##Libraries
+## Naive Byes Classification with R
+## Libraries
 > library(naivebayes)
 > library(dplyr)
 > library(ggplot2)
@@ -21,6 +21,7 @@ admit  1  2  3  4
     1 33 54 28 12
 > data$rank<-as.factor(data$rank)
 > data$admit<-as.factor(data$admit)
-> ## visualisation
+## visualisation
 > pairs.panels(data[-1])
-http://127.0.0.1:38951/graphics/b3fcb89f-01ab-4341-8ece-39a642d78528.png
+![image](https://user-images.githubusercontent.com/70443251/123532915-132bbb80-d72f-11eb-8fc5-076cd0668b7b.png)
+
