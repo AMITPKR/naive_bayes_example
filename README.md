@@ -1,15 +1,21 @@
 ### Naive Byes Classification with R
 ### Libraries
 library(naivebayes)
+
 library(dplyr)
+
 library(ggplot2)
+
 library(psych)
 
 data<-read.csv("binary.csv",header=T)
+
 str(data)
+
 xtabs(~admit+rank,data)
 
 data$rank<-as.factor(data$rank)
+
 data$admit<-as.factor(data$admit)
 
 ### visualisation
